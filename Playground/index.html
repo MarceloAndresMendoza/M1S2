@@ -7,27 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/andres/styles.css">
+    <script src="./assets/css/bootstrap5/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/c914113a42.js" crossorigin="anonymous"></script>
     <title>CSS Playground</title>
 </head>
 
 <body class="bg-navy text-space-light">
-    <div>
-        <header>
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">primary</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarID">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                
-                            </div>
+    <nav class="navbar bg-darkernavy navbar-dark navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-space-light" href="#">
+                <img src="./assets/img/astromart-logo.png" alt="" width="48" class="d-inline-block align-top">
+                <span class="display-5">ASTROMART</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AstroPuntos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la tienda"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img-darker">
+                        <img src="./assets/img/spaceship.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="">
+                            <h1 class="display-4">Repuestos de mejor calidad</h3>
                         </div>
                     </div>
-                </nav>
-        </header>
-    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-darker">
+                        <img src="./assets/img/space-station.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption ">
+                        <div class="">
+                            <h1 class="display-4">Delivery directo a tu nave</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-darker">
+                        <img src="./assets/img/solar-eclipse.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="">
+                            <h1 class="display-4">Presentes en tres sistemas</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+
 </html>
