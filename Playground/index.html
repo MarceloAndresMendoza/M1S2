@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marcelo Mendoza 2013 - Con cariño hecho a manito.">
     <link rel="stylesheet" href="./assets/css/bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/andres/styles.css">
     <script src="./assets/css/bootstrap5/js/bootstrap.js"></script>
@@ -12,11 +13,11 @@
     <title>CSS Playground</title>
 </head>
 
-<body class="bg-navy text-space-light">
+<body class="bg-navy text-light">
     <nav class="navbar bg-darkernavy navbar-dark navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand text-space-light" href="#">
-                <img src="./assets/img/astromart-logo.png" alt="" width="48" class="d-inline-block align-top">
+                <img src="./assets/img/astromart-logo.png" alt="" width="48" class=" align-top">
                 <span class="display-5">ASTROMART</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,38 +51,77 @@
         <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="img-darker">
-                        <img src="./assets/img/spaceship.jpg" class="d-block w-100" alt="...">
+                    <div class="img-darker carousel-img-container">
+                        <img src="./assets/img/spaceship.jpg" class="d-block w-100 mx-auto" alt="Nave espacial">
                     </div>
                     <div class="carousel-caption">
                         <div class="">
-                            <h1 class="display-4">Repuestos de mejor calidad</h3>
+                            <h1 class="display-6 text-space-light">Repuestos de mejor calidad</h3>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="img-darker">
-                        <img src="./assets/img/space-station.jpg" class="d-block w-100" alt="...">
+                    <div class="img-darker carousel-img-container">
+                        <img src="./assets/img/space-station.jpg" class="d-block w-100" alt="Estación espacial">
                     </div>
                     <div class="carousel-caption ">
                         <div class="">
-                            <h1 class="display-4">Delivery directo a tu nave</h3>
+                            <h1 class="display-6 text-space-light">Delivery directo a tu nave</h3>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="img-darker">
-                        <img src="./assets/img/solar-eclipse.jpg" class="d-block w-100" alt="...">
+                    <div class="img-darker carousel-img-container">
+                        <img src="./assets/img/factory.jpg" class="d-block w-100" alt="Fábrica">
                     </div>
                     <div class="carousel-caption">
                         <div class="">
-                            <h1 class="display-4">Presentes en tres sistemas</h3>
+                            <h1 class="display-6 text-space-light">Certificación GSTL-44</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main></main>
+    <main class="container mt-4 ms-4">
+        <h1 class="display-4">Astromart le da la Bienvenida</h1>
+        <p class="mb-5">Tenemos la mejor variedad de productos y servicios para tu vehículo espacial.</p>
+    </main>
+    <section class="container mt-4 ms-4">
+        <div class="card-group">
+            <div class="card bg-darkernavy" style="width:18rem;">
+                <img src="./assets/img/space-ship-parts.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title display-6">Variedad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Variados y a su alcance</h6>
+                    <p class="card-text">Consulte por nuestro servicio de reparaciones con productos de toda la Unión
+                        Intergaláctica.</p>
+                </div>
+            </div>
+            <div class="card bg-darkernavy" style="width:18rem;">
+                <img src="./assets/img/space-ship-over-planet.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title display-6">Universalidad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Ya llevamos 25 sistemas</h6>
+                    <p class="card-text">Seguimmos creciendo para abarcar toda la Gonglomeración de la Federación Galáctica.</p>
+                </div>
+            </div>
+            <div class="card bg-darkernavy" style="width:18rem;">
+                <img src="./assets/img/alien-shopping.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title display-6">Interculturalidad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Tenemos integración de lenguaje SERNM-2R</h6>
+                    <p class="card-text">Recibimos certificación de interculturalidad galáctica SERNM-513-UN para tratar con razas sociales y no sociales.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <br><br><br><br><br><br><br><br>
 
 </html>
