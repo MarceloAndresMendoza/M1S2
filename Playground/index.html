@@ -5,84 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marcelo Mendoza 2013 - Con cariño hecho a manito.">
     <link rel="stylesheet" href="./assets/css/bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/andres/styles.css">
+    <script src="./assets/css/bootstrap5/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/c914113a42.js" crossorigin="anonymous"></script>
     <title>CSS Playground</title>
 </head>
 
-<body class="bg-navy text-space-light">
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand navbar-dark bg-secondary ps-5">
-            <a class="navbar-brand border-end pe-4" href="#">
-                <img src="./assets/img/rocket.png" alt="" width="40" class="d-inline-block align-text-center">
-                ETRAK SPACE FACILITY</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item ps-3"><a class="nav-link active" aria-current="page" href="#">
-                            <img src="./assets/img/galaxy.png" alt="" width="30"
-                                class="d-inline-block align-text-center">
-                            Inicio</a>
+<body class="bg-navy text-light">
+    <nav class="navbar bg-darkernavy navbar-dark navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-space-light" href="#">
+                <img src="./assets/img/astromart-logo.png" alt="" width="48" class=" align-top">
+                <span class="display-5">ASTROMART</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
-                    <li class="nav-item ps-3"><a class="nav-link" href="#">
-                            <img src="./assets/img/shop.png" alt="" width="30" class="d-inline-block align-text-center">
-                            Tienda en línea</a></li>
-                    <li class="nav-item ps-3"><a class="nav-link" href="#">
-                            <img src="./assets/img/space-station.png" alt="" width="30"
-                                class="d-inline-block align-text-center">
-                            Solicitud de atraque</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AstroPuntos</a>
+                    </li>
                 </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la tienda"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
-        </nav>
-    </div>
-    <div class="container-fluid">
-        <header class="p-5 bg-stars">
-            <div>
-                <h1 class="text-90-deg">ETRAK</h1>
+        </div>
+    </nav>
+    <header>
+        <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img-darker carousel-img-container">
+                        <img src="./assets/img/spaceship.jpg" class="d-block w-100 mx-auto" alt="Nave espacial">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="">
+                            <h1 class="display-6 text-space-light">Repuestos de mejor calidad</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-darker carousel-img-container">
+                        <img src="./assets/img/space-station.jpg" class="d-block w-100" alt="Estación espacial">
+                    </div>
+                    <div class="carousel-caption ">
+                        <div class="">
+                            <h1 class="display-6 text-space-light">Delivery directo a tu nave</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-darker carousel-img-container">
+                        <img src="./assets/img/factory.jpg" class="d-block w-100" alt="Fábrica">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="">
+                            <h1 class="display-6 text-space-light">Certificación GSTL-44</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2 class="ps-4 ms-4">Puerto Galáctico Alask-100h</h2>
-            <p class="ps-4 ms-4">¡Gracias por venir! Somos una de las tiendas de la cadena GalarkOne ubicado en las
-                principales autopistas
-                galácticas del universo.</p>
-            <p class="ps-4 ms-4">Si desea comprar, puede atracar en los nodos de compra en línea y revisar el
-                catálogo desde la comodidad de
-                su nave. O bien, si lo desea, puede solicitar atracar en el puerto y visitarnos personalmente.
-            </p>
-        </header>
-    </div>
-    <div class="container">
-        <main class="">
+        </div>
+    </header>
+    <main class="container mt-4 ms-4">
+        <h1 class="display-4">Astromart le da la Bienvenida</h1>
+        <p class="mb-5">Tenemos la mejor variedad de productos y servicios para tu vehículo espacial.</p>
+    </main>
+    <section class="container mt-4 ms-4">
+        <div class="card-group">
+            <div class="card bg-darkernavy" style="width:18rem;">
+                <img src="./assets/img/space-ship-parts.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title display-6">Variedad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Variados y a su alcance</h6>
+                    <p class="card-text">Consulte por nuestro servicio de reparaciones con productos de toda la Unión
+                        Intergaláctica.</p>
+                </div>
+            </div>
+            <div class="card bg-darkernavy" style="width:18rem;">
+                <img src="./assets/img/space-ship-over-planet.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title display-6">Universalidad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Ya llevamos 25 sistemas</h6>
+                    <p class="card-text">Seguimmos creciendo para abarcar toda la Gonglomeración de la Federación Galáctica.</p>
+                </div>
+            </div>
+            <div class="card bg-darkernavy" style="width:18rem;">
+                <img src="./assets/img/alien-shopping.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title display-6">Interculturalidad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Tenemos integración de lenguaje SERNM-2R</h6>
+                    <p class="card-text">Recibimos certificación de interculturalidad galáctica SERNM-513-UN para tratar con razas sociales y no sociales.</p>
+                </div>
+            </div>
+        </div>
 
-        </main>
-    </div>
-    <div class="container">
-        <section class="m-5">
-            <h1>Productos más buscados</h1>
-            <table class="table table-striped table-hover border-dark bg-secondary">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Categoría</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <th>Tensor de tiempo espacio HGAARG-1002</th>
-                    <td>Repuestos</td>
-                    <td>USD $ 5.000</td>
-                </tr>
-                <tr>
-                    <th>Generador de plegado temporal</th>
-                    <td>Repuestos</td>
-                    <td>USD $ 1.650.000</td>
-                </tr>
-                <tr>
-                    <th>Cápsula de materia oscura (1 TON)</th>
-                    <td>Combustible</td>
-                    <td>USD $ 600</td>
-                </tr>
-            </table>
-        </section>
-    </div>
-</body>
+
+
+    </section>
+    <br><br><br><br><br><br><br><br>
 
 </html>
