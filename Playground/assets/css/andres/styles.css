@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Alien Sans";
+    src: url('../../fonts/Glipervelz.ttf');
+    src: url('../../fonts/Glipervelz.ttf') format('truetype');
+}
+.alien {
+    color:rgb(116, 186, 207);
+    font-family: "Alien Sans";
+    font-size: xx-large;
+}
+.alien-title {
+    font-family: "Alien Sans";
+    font-size: x-large;
+}
+
 .bg-navy {
     background-color: rgb(3, 9, 20);
 }
