@@ -39,3 +39,7 @@
     max-height: 600px;
     width: auto;
 }
+.carousel-container img {
+    object-fit: cover;
+    height: 600px;
+}

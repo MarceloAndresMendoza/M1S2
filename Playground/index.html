@@ -13,46 +13,49 @@
     <title>CSS Playground</title>
 </head>
 
-<body class="bg-navy text-light">
-    <nav class="navbar bg-darkernavy navbar-dark navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-space-light" href="#">
-                <img src="./assets/img/astromart-logo.png" alt="" width="48" class=" align-top">
-                <span class="display-5">ASTROMART</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mi cuenta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">AstroPuntos <span class="badge bg-danger">¡Nuevo!</span></a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar en la tienda"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+<body class="bg-navy">
+    <header class="relative">
+        <nav class="navbar bg-darkernavy navbar-dark navbar-expand-lg sticky-top text-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-space-light" href="#">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/astromart-logo.png" alt="Astromart" width="48" class="mb-1">
+                        <h1 class="ms-3 mt-1 text-uppercase fs-2">Astromart</h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mi cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AstroPuntos <span class="badge bg-danger">¡Nuevo!</span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar en la tienda"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <header>
+        </nav>
         <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="img-darker carousel-img-container">
-                        <img src="./assets/img/spaceship.jpg" class="d-block w-100 mx-auto" alt="Nave espacial">
+                    <div class="img-darker carousel-img-container carousel-container">
+                        <img src="./assets/img/spaceship.jpg" class="d-block w-100 image-responsive"
+                            alt="Nave espacial">
                     </div>
                     <div class="carousel-caption">
                         <div class="">
@@ -61,8 +64,9 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="img-darker carousel-img-container">
-                        <img src="./assets/img/space-station.jpg" class="d-block w-100" alt="Estación espacial">
+                    <div class="img-darker carousel-img-container ">
+                        <img src="./assets/img/space-station.jpg" class="d-block w-100 image-responsive"
+                            alt="Estación espacial">
                     </div>
                     <div class="carousel-caption ">
                         <div class="">
@@ -71,8 +75,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="img-darker carousel-img-container">
-                        <img src="./assets/img/factory.jpg" class="d-block w-100" alt="Fábrica">
+                    <div class="img-darker carousel-img-container ">
+                        <img src="./assets/img/factory.jpg" class="d-block w-100 image-responsive" alt="Fábrica">
                     </div>
                     <div class="carousel-caption">
                         <div class="">
@@ -83,45 +87,73 @@
             </div>
         </div>
     </header>
-    <main class="container mt-4 ms-4">
-        <h1 class="display-4">Astromart le da la Bienvenida</h1>
-        <p class="mb-5">Tenemos la mejor variedad de productos y servicios para tu vehículo espacial.<br><span class="alien">nIb quvmoH chaw nuQ pIqaD way tungHa' taS.</span></p>
-    </main>
-    <section class="container mt-4 ms-4">
-        <div class="card-group">
-            <div class="card bg-darkernavy" style="width:18rem;">
-                <img src="./assets/img/space-ship-parts.png"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title display-6">Variedad</h5>
-                    <h6 class="card-subtitle mb-2 text-muted alien">pegh qumwI' </h6>
-                    <p class="card-text">Consulte por nuestro servicio de reparaciones con productos de toda la Unión Intergaláctica. Contamos con vías de agujeros de gusano pequeñas para el envío y recepción de partes en toda la galaxia, y también podemos enviar y recibir paquetes para tus seres queridos desde y hacia la estación.</p>
+    <main class="m-4 text-light d-block">
+        <div class="container-fluid">
+            <section class="me-4 d-flex justify-content-center align-items-center">
+                <div class="container-fluid">
+                    <h1 class="display-4 ">Astromart le da la Bienvenida</h1>
+                <p class="mb-5">Tenemos la mejor variedad de productos y servicios para tu vehículo espacial.<br><span
+                        class="alien">nIb quvmoH chaw nuQ pIqaD way tungHa' taS.</span></p>
                 </div>
-            </div>
-            <div class="card bg-darkernavy" style="width:18rem;">
-                <img src="./assets/img/space-ship-over-planet.png"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title display-6">Universalidad</h5>
-                    <h6 class="card-subtitle mb-2 text-muted alien">choba' Qol</h6>
-                    <p class="card-text">Seguimmos creciendo para abarcar toda la Gonglomeración de la Federación Galáctica. Tenemos más de 145 estaciones esperando que nos visites, con servicios adicionales de comida, alojamiento, higiene y reconstrucción genética.</p>
-                </div>
-            </div>
-            <div class="card bg-darkernavy" style="width:18rem;">
-                <img src="./assets/img/alien-shopping.png"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title display-6">Interculturalidad</h5>
-                    <h6 class="card-subtitle mb-2 text-muted alien ">van chergh may</h6>
-                    <p class="card-text">Recibimos certificación de interculturalidad galáctica SERNM-513-UN para tratar con razas sociales y no sociales; hablantes y no hablantes. Nuestro diccionario centralizado digital reconoce más de 34029920 idiomas y dialectos.</p>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-    
+        <div class="container-fluid">
+            <section class="text-light">
+                <div class="card-group">
+                    <div class="card bg-darkernavy" style="width:18rem;">
+                        <img src="./assets/img/space-ship-parts.png" class="card-img-top" alt="futuristic engine photo">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Variedad</h5>
+                            <h6 class="card-subtitle mb-2 text-muted alien">pegh qumwI' </h6>
+                            <p class="card-text">Consulte por nuestro servicio de reparaciones con productos de toda la
+                                Unión Intergaláctica. Contamos con vías de agujeros de gusano pequeñas para el envío y
+                                recepción de partes en toda la galaxia, y también podemos enviar y recibir paquetes para tus
+                                seres queridos desde y hacia la estación.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-darkernavy" style="width:18rem;">
+                        <img src="./assets/img/space-ship-over-planet.png" class="card-img-top"
+                            alt="spache ship passing by a planet">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Universalidad</h5>
+                            <h6 class="card-subtitle mb-2 text-muted alien">choba' Qol</h6>
+                            <p class="card-text">Seguimmos creciendo para abarcar toda la Gonglomeración de la Federación
+                                Galáctica. Tenemos más de 145 estaciones esperando que nos visites, con servicios
+                                adicionales de comida, alojamiento, higiene y reconstrucción genética.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-darkernavy" style="width:18rem;">
+                        <img src="./assets/img/alien-shopping.png" class="card-img-top" alt="an alien shopping">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Interculturalidad</h5>
+                            <h6 class="card-subtitle mb-2 text-muted alien ">van chergh may</h6>
+                            <p class="card-text">Recibimos certificación de interculturalidad galáctica SERNM-513-UN para
+                                tratar con razas sociales y no sociales; hablantes y no hablantes. Nuestro diccionario
+                                centralizado digital reconoce más de 34029920 idiomas y dialectos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid">
+            <section class="container mt-4 ms-4 text-center ">
+                <h2 class="display-5 text-light">Mantente al día con nuestras últimas ofertas y productos</h2>
+                <div class="form-floating mt-4">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <footer>
-        
+
     </footer>
     <br><br><br><br><br><br><br><br>
+</body>
 
 </html>
